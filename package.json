@@ -1,11 +1,11 @@
 {
   "name": "your-project-name",
   "version": "1.0.0",
-  "main": "dist/server.js",  // Corrigido para apontar para o arquivo transpilado
+  "main": "dist/server.js",  
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",  // Alterado para o arquivo correto
+    "dev": "ts-node-dev src/index.ts", 
     "build": "tsc",
-    "start": "node dist/index.js",  // Corrigido para apontar para o arquivo transpilado
+    "start": "node dist/index.js",  
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init"
   },
