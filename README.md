@@ -17,7 +17,7 @@ Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 ## Instalação
 Para começar, clone o repositório e instale as dependências:
 
-git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB <br>
+git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB.git <br>
 cd my-api <br>
 npm install
 
