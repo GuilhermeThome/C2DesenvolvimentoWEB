@@ -13,11 +13,19 @@ Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 - [Uso](#uso)
 - [Licença](#licença)
 
+  
+## Instalação
+Para começar, clone o repositório e instale as dependências:
+
+git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB
+cd my-api
+npm install
+
 
 ## Configuração
+
 Configure o TypeScript e o Prisma:
 
-sh
 npx prisma generate
 npx prisma migrate dev --name init
 
@@ -57,12 +65,31 @@ model Comment {
   author    User    @relation(fields: [authorId], references: [id])
 }
 
+## Rotas 
 
-## Instalação
+Users
+GET /users - Retorna todos os usuários.
+GET /users/:id - Retorna um usuário específico.
+POST /users - Cria um novo usuário.
+PUT /users/:id - Atualiza um usuário existente.
+DELETE /users/:id - Deleta um usuário.
 
-Para começar, clone o repositório e instale as dependências:
+Posts
+GET /posts - Retorna todos os posts.
+GET /posts/:id - Retorna um post específico.
+POST /posts - Cria um novo post.
+PUT /posts/:id - Atualiza um post existente.
+DELETE /posts/:id - Deleta um post.
 
-```sh
-git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB
-cd my-api
-npm install
+Comments
+GET /comments - Retorna todos os comentários.
+GET /comments/:id - Retorna um comentário específico.
+POST /comments - Cria um novo comentário.
+PUT /comments/:id - Atualiza um comentário existente.
+DELETE /comments/:id - Deleta um comentário.
+
+
+## Uso
+Para iniciar o servidor, execute:
+npm run dev
+
