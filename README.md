@@ -1,4 +1,4 @@
-# C2DesenvolvimentoWEB
+# Projeto Prático da C2: API com NodeJS, Typescript, Prisma e Express
 # My API
 
 Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
