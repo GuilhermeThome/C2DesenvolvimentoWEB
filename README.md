@@ -17,8 +17,8 @@ Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 ## Instalação
 Para começar, clone o repositório e instale as dependências:
 
-git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB
-cd my-api
+git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB <br>
+cd my-api <br>
 npm install
 
 
@@ -26,7 +26,7 @@ npm install
 
 Configure o TypeScript e o Prisma:
 
-npx prisma generate
+npx prisma generate <br>
 npx prisma migrate dev --name init
 
 
@@ -34,60 +34,59 @@ npx prisma migrate dev --name init
 
 ## User
 
-model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String?
-  posts     Post[]
-  comments  Comment[]
-}
+model User { <br>
+  id_________________Int__________@id @default(autoincrement()) <br>
+  email____________String_________@unique <br>
+  name_____________String? <br>
+  posts____________Post[] <br>
+  comments________Comment[] <br>
+} <br>
 
 ## Post
 
-model Post {
-  id          Int       @id @default(autoincrement())
-  title       String
-  content     String?
-  published   Boolean   @default(false)
-  authorId    Int
-  author      User      @relation(fields: [authorId], references: [id])
-  comments    Comment[]
-}
+model Post { <br>
+  id__________________Int______________@id @default(autoincrement()) <br>
+  title_____________String <br>
+  content___________String? <br>
+  published_________Boolean____________@default(false) <br>
+  authorId____________Int <br>
+  author_____________User______________@relation(fields: [authorId], references: [id]) <br>
+  comments_________Comment[] <br>
+} <br>
 
 ## Comment
 
-model Comment {
-  id        Int     @id @default(autoincrement())
-  content   String
-  postId    Int
-  post      Post    @relation(fields: [postId], references: [id])
-  authorId  Int
-  author    User    @relation(fields: [authorId], references: [id])
-}
+model Comment { <br>
+  id__________________Int_____________@id @default(autoincrement()) <br>
+  content____________String <br>
+  postId______________Int <br>
+  post________________Post____________@relation(fields: [postId], references: [id]) <br>
+  authorId____________Int <br>
+  author______________User____________@relation(fields: [authorId], references: [id]) <br>
+} <br> 
 
 ## Rotas 
 
 Users
-GET /users - Retorna todos os usuários.
-GET /users/:id - Retorna um usuário específico.
-POST /users - Cria um novo usuário.
-PUT /users/:id - Atualiza um usuário existente.
-DELETE /users/:id - Deleta um usuário.
+- GET /users - Retorna todos os usuários.
+- GET /users/:id - Retorna um usuário específico.
+- POST /users - Cria um novo usuário.
+- PUT /users/:id - Atualiza um usuário existente.
+- DELETE /users/:id - Deleta um usuário.
 
 Posts
-GET /posts - Retorna todos os posts.
-GET /posts/:id - Retorna um post específico.
-POST /posts - Cria um novo post.
-PUT /posts/:id - Atualiza um post existente.
-DELETE /posts/:id - Deleta um post.
+- GET /posts - Retorna todos os posts.
+- GET /posts/:id - Retorna um post específico.
+- POST /posts - Cria um novo post.
+- PUT /posts/:id - Atualiza um post existente.
+- DELETE /posts/:id - Deleta um post.
 
 Comments
-GET /comments - Retorna todos os comentários.
-GET /comments/:id - Retorna um comentário específico.
-POST /comments - Cria um novo comentário.
-PUT /comments/:id - Atualiza um comentário existente.
-DELETE /comments/:id - Deleta um comentário.
-
+- GET /comments - Retorna todos os comentários.
+- GET /comments/:id - Retorna um comentário específico.
+- POST /comments - Cria um novo comentário.
+- PUT /comments/:id - Atualiza um comentário existente.
+- DELETE /comments/:id - Deleta um comentário.
 
 ## Uso
 Para iniciar o servidor, execute:
