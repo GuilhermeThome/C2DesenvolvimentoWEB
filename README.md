@@ -11,8 +11,7 @@ Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 - [Modelos](#modelos)
 - [Rotas](#rotas)
 - [Uso](#uso)
-- [Licença](#licença)
-
+- [Docker](#docker)
   
 ## Instalação
 Para começar, clone o repositório e instale as dependências:
@@ -95,3 +94,12 @@ Comments
 Para iniciar o servidor, execute:
 npm run dev
 
+## Docker
+Se preferir, você pode executar a API em um contêiner Docker. Certifique-se de ter o Docker instalado. Para construir e executar a imagem Docker da API, siga os passos abaixo:<br>
+Construindo a Imagem Docker: <br>
+docker build -t my-api . <br>
+
+Executando o Contêiner Docker: <br>
+docker run -p 3000:3000 my-api <br>
+
+A API estará acessível em http://localhost:3000.
