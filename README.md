@@ -21,9 +21,9 @@ git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB.git <br>
 cd my-api <br>
 npm install
 
-dependências necessárias para trabalhar com JWT:
-npm install jsonwebtoken bcryptjs
-npm install --save-dev @types/jsonwebtoken @types/bcryptjs
+dependências necessárias para trabalhar com JWT: <br>
+npm install jsonwebtoken bcryptjs <br>
+npm install --save-dev @types/jsonwebtoken @types/bcryptjs <br>
 
 ## Configuração
 
