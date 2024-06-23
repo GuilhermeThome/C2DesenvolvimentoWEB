@@ -96,6 +96,7 @@ npm run dev
 
 ## Docker
 Se preferir, você pode executar a API em um contêiner Docker. Certifique-se de ter o Docker instalado. Para construir e executar a imagem Docker da API, siga os passos abaixo:<br>
+
 CONSTRUINDO UMA IMAGEM DOCKER: <br>
 docker build -t my-api . <br>
 
