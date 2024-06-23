@@ -1,5 +1,5 @@
 # Projeto Prático da C2: API com NodeJS, Typescript, Prisma e Express
-# My API
+# Minha API
 
 Uma API criada com Node.js, TypeScript, Prisma e SQLite, seguindo o padrão MVC.
 
@@ -21,6 +21,9 @@ git clone https://github.com/GuilhermeThome/C2DesenvolvimentoWEB.git <br>
 cd my-api <br>
 npm install
 
+dependências necessárias para trabalhar com JWT:
+npm install jsonwebtoken bcryptjs
+npm install --save-dev @types/jsonwebtoken @types/bcryptjs
 
 ## Configuração
 
