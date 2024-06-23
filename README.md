@@ -30,7 +30,7 @@ npm install --save-dev @types/jsonwebtoken @types/bcryptjs <br>
 Configure o TypeScript e o Prisma:
 
 npx prisma generate <br>
-npx prisma migrate dev --name init
+npx prisma migrate dev --name add_password_to_user
 
 
 # Modelos
